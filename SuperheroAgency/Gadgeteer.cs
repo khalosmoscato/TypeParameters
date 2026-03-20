@@ -6,8 +6,13 @@ namespace SuperheroAgency
 {
     public class Gadgeteer : Superhero, ITech, IStrength
     {
-        public Gadgeteer(string alias, string secreteIdentity, int age, Alignment alignment) : base(alias, secreteIdentity, age, alignment)
+
+        public string Gadget { get; }
+        public int StrengthLevel { get; }
+        public Gadgeteer(string alias, string secreteIdentity, int age, Alignment alignment, string gadget, int strengthLevel) : base(alias, secreteIdentity, age, alignment)
         {
+            Gadget = gadget;
+            StrengthLevel = strengthLevel;
 
         }
 

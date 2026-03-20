@@ -6,8 +6,15 @@ namespace SuperheroAgency
 {
     public class Tank : Superhero, IFly, IStrength
     {
-        public Tank(string alias, string secreteIdentity, int age, Alignment alignment) : base(alias, secreteIdentity, age, alignment)
+        public public double FlightSpeed { get;  }
+        public double MaxHeight { get;  }
+        public int StrengthLevel { get; }
+        public Tank(string alias, string secreteIdentity, int age, Alignment alignment, double flightSpeed, double maxHeight, int strengthlevel) : base(alias, secreteIdentity, age, alignment)
         {
+            FlightSpeed = flightSpeed;
+            MaxHeight = maxHeight;
+            StrengthLevel = strengthlevel;
+
 
         }
 

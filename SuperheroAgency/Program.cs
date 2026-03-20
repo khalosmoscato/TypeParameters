@@ -30,13 +30,13 @@ namespace SuperheroAgency
             //    Console.WriteLine(book);
             //}
 
-            var myBooks = new CustomStack<string>();
+            //var myBooks = new CustomStack<string>();
 
-            myBooks.Push("Book 1");
-            myBooks.Push("Book 2");
-            myBooks.Push("Book 3");
+            //myBooks.Push("Book 1");
+            //myBooks.Push("Book 2");
+            //myBooks.Push("Book 3");
 
-            Console.WriteLine(myBooks.Pop()); // Book 3
+            //Console.WriteLine(myBooks.Pop()); // Book 3
 
 
             //
@@ -57,6 +57,6 @@ namespace SuperheroAgency
             //strandedCat.HeroesDeployed.Add(rich); // Should provide a compile time error
         }
 
-        public static T GetLast<T>(T[] array) => array[^1]; 
+        //public static T GetLast<T>(T[] array) => array[^1]; 
     }
 }

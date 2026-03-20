@@ -7,7 +7,7 @@ namespace SuperheroAgency
     public interface IFly
     {
         double FlightSpeed { get; }
-        double Max111height { get;  }
+        double MaxHeight { get;  }
         void Fly(string alias);
 
     }

@@ -6,8 +6,16 @@ namespace SuperheroAgency
 {
     public class Mystic : Superhero, IFly, ITelepathy 
     {
-        public Mytsic(string alias, string secreteIdentity, int age, Alignment alignment) : base(alias, secreteIdentity, age, alignment)
+
+        public double FlightSpeed { get; }
+        public double MaxHeight { get; }
+
+        public int PowerLevel { get; }
+        public Mytsic(string alias, string secreteIdentity, int age, Alignment alignment, double flightSpeed, double maxHeight, int powerLevel) : base(alias, secreteIdentity, age, alignment)
         {
+            FlightSpeed = flightSpeed;
+            MaxHeight = maxHeight;
+            PowerLevel = powerLevel;
 
         }
 
