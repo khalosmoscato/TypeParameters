@@ -52,7 +52,12 @@ namespace SuperheroAgency
 
             var reyzhen = new Mystic("Michael", "Reyzhen", 7000, Alignment.GOOD);
             strandedCat.HeroesDeployed.Add(reyzhen); // All good
-
+            //Testing 
+            foreach(var  hero in strandedCat.HeroesDeployed)
+            {
+                var xHero = (Superhero)hero;
+                Console.WriteLine(xHero.Alias);
+            }
             //var rich = new Gadgeteer("Rich", "The Developer", 33, Alignment.EVIL);
             //strandedCat.HeroesDeployed.Add(rich); // Should provide a compile time error
         }
