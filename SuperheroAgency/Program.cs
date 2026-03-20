@@ -1,5 +1,6 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace SuperheroAgency
 {
@@ -8,26 +9,34 @@ namespace SuperheroAgency
         static void Main(string[] args)
         {
 
-            int[] intArray = { 1, 5, 2, 8, 6 };
-            Console.WriteLine(GetLast(intArray)); // 6
+            //int[] intArray = { 1, 5, 2, 8, 6 };
+            //Console.WriteLine(GetLast(intArray)); // 6
 
-            double[] doubleArray = { 10.5, 60.5, 2.2, 8.76, 6.1111 };
-            Console.WriteLine(GetLast(doubleArray)); // 6.1111
+            //double[] doubleArray = { 10.5, 60.5, 2.2, 8.76, 6.1111 };
+            //Console.WriteLine(GetLast(doubleArray)); // 6.1111
 
-            string[] stringArray = { "hello", "world", "it's", "northcoders!" };
-            Console.WriteLine(GetLast(stringArray)); // "northcoders"
+            //string[] stringArray = { "hello", "world", "it's", "northcoders!" };
+            //Console.WriteLine(GetLast(stringArray)); // "northcoders"
 
-            Stack<string> books = new Stack<string>();
-            books.Push("books1");
-            books.Push("books2");
-            books.Push("books3");
-            var x = books.Pop();
-            Console.WriteLine(x);
-            Console.WriteLine(books.Count);
-            foreach (var book in books)
-            {
-                Console.WriteLine(book);
-            }
+            //Stack<string> books = new Stack<string>();
+            //books.Push("books1");
+            //books.Push("books2");
+            //books.Push("books3");
+            //var x = books.Pop();
+            //Console.WriteLine(x);
+            //Console.WriteLine(books.Count);
+            //foreach (var book in books)
+            //{
+            //    Console.WriteLine(book);
+            //}
+
+            var myBooks = new CustomStack<string>();
+
+            myBooks.Push("Book 1");
+            myBooks.Push("Book 2");
+            myBooks.Push("Book 3");
+
+            Console.WriteLine(myBooks.Pop()); // Book 3
         }
 
         public static T GetLast<T>(T[] array) => array[^1]; 
