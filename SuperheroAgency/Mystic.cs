@@ -11,12 +11,16 @@ namespace SuperheroAgency
         public double MaxHeight { get; }
 
         public int PowerLevel { get; }
-        public Mytsic(string alias, string secreteIdentity, int age, Alignment alignment, double flightSpeed, double maxHeight, int powerLevel) : base(alias, secreteIdentity, age, alignment)
+        public Mystic(string alias, string secreteIdentity, int age, Alignment alignment, double flightSpeed, double maxHeight, int powerLevel) : base(alias, secreteIdentity, age, alignment)
         {
             FlightSpeed = flightSpeed;
             MaxHeight = maxHeight;
             PowerLevel = powerLevel;
 
+        }
+
+        public Mystic(string alias, string secretIdentity, int age, Alignment alignment) : base(alias, secretIdentity, age, alignment)
+        {
         }
 
         public void Fly(string alias)
