@@ -7,6 +7,6 @@ namespace SuperheroAgency
     public interface ITech
     {
         string Gadget { get; }
-        void Hack(sting alias);
+        void Hack(string alias);
     }
 }

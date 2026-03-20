@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SuperheroAgency
 {
-    public class CombatMission : Mission<T>
+    public class CombatMission<T> : Mission<T>
     {
         public CombatMission(string location, int reward) : base(location, reward)
         {
